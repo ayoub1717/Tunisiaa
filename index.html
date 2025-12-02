@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tunisia</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/R.jpg" href="images/logo.png">
 </head>
 <body>
+<div class="content">
     <header>
         <div class="btn">
             <button class="bn"  onclick="home()">
@@ -195,6 +197,11 @@
     <p>© 2025 Tunisia. All rights reserved to 2 informatique.</p>
 </center>
 </footer>
+</div>
+
+<div id="loader">
+  <div class="spinner"><img src="img/R.jpg" alt=""></div>
+</div>
 
 <script>
 
@@ -235,6 +242,11 @@ document.getElementById("food").style.display = "block";
 document.getElementById("food").style.top = "0px";
 document.getElementById("genn").style.display = "none";
 }
+window.addEventListener("load", function () {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("content").style.display = "block";
+  });
+
 </script>
 
 
